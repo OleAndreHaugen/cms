@@ -1,0 +1,29 @@
+{
+	"id": "d623adbe-432d-4eba-9539-3daa0d093141",
+	"createdAt": "2022-09-10T06:23:58.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "2e6a9176-0786-4089-9ec8-2b588192f36c",
+			"name": "cms_content",
+			"contextname": "cms_content"
+		}
+	],
+	"apis": [],
+	"name": "ContentDelete",
+	"ver": "22.9.10.824",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"await entities.cms_content.delete(req.query.id);\r",
+		"complete();"
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "ec9a5ab2-018c-4d25-9ffe-832d7b542560",
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}

@@ -1,0 +1,29 @@
+{
+	"id": "f80f1f10-ab8b-445a-b770-8c807f7daa62",
+	"createdAt": "2022-09-05T19:08:55.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "a03b504e-8c88-482f-aaf7-cb04c4b9cad3",
+			"name": "cms_model",
+			"contextname": "cms_model"
+		}
+	],
+	"apis": [],
+	"name": "ModelsDelete",
+	"ver": "22.9.5.219",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"await entities.cms_model.delete(req.query.id);\r",
+		"complete();"
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "ec9a5ab2-018c-4d25-9ffe-832d7b542560",
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}

@@ -1,0 +1,35 @@
+{
+	"id": "8e6f4db2-c202-4e91-b0c7-7a736c734aba",
+	"createdAt": "2022-09-14T04:25:51.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "3bdab4d0-a7a2-44c5-96f7-2b8015108b3b",
+			"name": "cms_page",
+			"contextname": "cms_page"
+		}
+	],
+	"apis": [],
+	"name": "PageSave",
+	"ver": "22.9.14.626",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"try {\r",
+		"    const savedData = await entities.cms_page.save(req.body);\r",
+		"    result.data = { status: \"Saved\", data: savedData }\r",
+		"    complete();\r",
+		"} catch (e) {\r",
+		"    result.data = { status: \"Error\", message: e }\r",
+		"    complete();\r",
+		"}"
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "ec9a5ab2-018c-4d25-9ffe-832d7b542560",
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}

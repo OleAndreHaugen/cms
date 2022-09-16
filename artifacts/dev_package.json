@@ -1,0 +1,191 @@
+{
+	"id": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142",
+	"createdAt": "2022-09-03T13:50:42.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"git": {
+		"targetServers": [],
+		"remote": "https://github.com/OleAndreHaugen/cms.git",
+		"testServers": [],
+		"packageJSON": [
+			"==OBJECT STRING==",
+			"{",
+			"  \"name\": \"com.neptune.cms\",",
+			"  \"version\": \"1.0.0\",",
+			"  \"description\": \"Content Management Solution\",",
+			"  \"author\": \"Neptune Software\",",
+			"  \"license\": \"LicenseRef-LICENSE\",",
+			"  \"private\": true,",
+			"  \"scripts\": {",
+			"    \"deploy\": \"ts-node src/deploy.ts\",",
+			"    \"test\": \"jest --passWithNoTests\"",
+			"  },",
+			"  \"engines\": {",
+			"    \"node\": \"18\"",
+			"  },",
+			"  \"devDependencies\": {",
+			"    \"@types/jest\": \"^26.0.23\",",
+			"    \"typescript\": \"^4.2.3\",",
+			"    \"ts-node\": \"^10.0.0\",",
+			"    \"axios\": \"^0.21.1\",",
+			"    \"jest\": \"^27.0.4\",",
+			"    \"ts-jest\": \"^27.0.3\"",
+			"  }",
+			"}",
+			""
+		]
+	},
+	"name": "com.neptune.cms",
+	"description": "Content Management Solution",
+	"ver": "22.9.16.812",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "6da8eb6f-6b4a-4dd5-adc7-e0d0465d7187",
+			"application": "cmsdesigner",
+			"title": "CMS",
+			"description": "CMS"
+		},
+		{
+			"id": "3852c84a-26f7-47ad-945f-45420f9d981c",
+			"application": "cms_layout_heroes",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "157e7167-f782-46ed-a050-5889687ad25c",
+			"application": "cms_controller",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "f61fc0e3-68bb-476c-985a-98b58f2d6d08",
+			"name": "CMS Client",
+			"description": "CMS Client API ",
+			"apiGroup": "c83268e4-6bc9-4fc6-92f7-668404af654a"
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "a03b504e-8c88-482f-aaf7-cb04c4b9cad3",
+			"name": "cms_model",
+			"description": "CMS: Content Model"
+		},
+		{
+			"id": "ab7cc274-8b51-4fcb-8c59-2126efb029b0",
+			"name": "cms_category",
+			"description": "CMS: Category"
+		},
+		{
+			"id": "2e6a9176-0786-4089-9ec8-2b588192f36c",
+			"name": "cms_content",
+			"description": "CMS: Content"
+		},
+		{
+			"id": "875fb7e0-4a14-49c1-994c-5c8142c78ea2",
+			"name": "cms_layout",
+			"description": "CMS: Layout"
+		},
+		{
+			"id": "2b48c59f-6ca9-4f9b-8e93-33d94040ca18",
+			"name": "cms_template",
+			"description": "CMS: Template"
+		},
+		{
+			"id": "3bdab4d0-a7a2-44c5-96f7-2b8015108b3b",
+			"name": "cms_page",
+			"description": "CMS: Page"
+		}
+	],
+	"jsclass": [
+		{
+			"id": "1be36063-d41f-451a-b9a9-c84a27bb18d4",
+			"name": "ModelsSave",
+			"description": null
+		},
+		{
+			"id": "f80f1f10-ab8b-445a-b770-8c807f7daa62",
+			"name": "ModelsDelete",
+			"description": null
+		},
+		{
+			"id": "e249df0b-ec78-47d2-83ac-e3fde68bfda1",
+			"name": "ContentSave",
+			"description": null
+		},
+		{
+			"id": "d623adbe-432d-4eba-9539-3daa0d093141",
+			"name": "ContentDelete",
+			"description": null
+		},
+		{
+			"id": "f9c753a8-df69-469c-a9c6-76b46fa0d220",
+			"name": "MasterData",
+			"description": null
+		},
+		{
+			"id": "2b407392-516a-42c1-98e7-b0b3c2067f1d",
+			"name": "LayoutSave",
+			"description": null
+		},
+		{
+			"id": "4494a70d-f98a-4d9e-9cfc-587effd10142",
+			"name": "LayoutDelete",
+			"description": null
+		},
+		{
+			"id": "7ab04e8f-63fd-4e5d-a406-afab0307c3c5",
+			"name": "TemplateDelete",
+			"description": null
+		},
+		{
+			"id": "e4a4b044-462a-47e4-a425-1069158d4e0e",
+			"name": "TemplateSave",
+			"description": null
+		},
+		{
+			"id": "c38d3486-eec9-46a9-8d70-05d9041ccbfa",
+			"name": "PageDelete",
+			"description": null
+		},
+		{
+			"id": "8e6f4db2-c202-4e91-b0c7-7a736c734aba",
+			"name": "PageSave",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "ec9a5ab2-018c-4d25-9ffe-832d7b542560",
+			"name": "CMS",
+			"description": null
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [
+		{
+			"id": "c83268e4-6bc9-4fc6-92f7-668404af654a",
+			"name": "CMS",
+			"description": "Content Management System"
+		}
+	],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": []
+}

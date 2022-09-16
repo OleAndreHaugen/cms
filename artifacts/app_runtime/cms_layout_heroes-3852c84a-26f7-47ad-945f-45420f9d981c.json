@@ -1,0 +1,496 @@
+{
+	"id": "3852c84a-26f7-47ad-945f-45420f9d981c",
+	"createdAt": "2022-09-03T14:25:34.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "4590db3f-89da-4d93-cbbb-d26c6fdf94a6",
+			"fieldName": "masterContainer",
+			"fieldParent": 0,
+			"fieldType": "nep.bootstrap.Container",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "type",
+					"grouping": "Properties",
+					"value": "Fluid",
+					"script": "",
+					"translation": []
+				},
+				{
+					"attribute": "backgroundColor",
+					"grouping": "Properties",
+					"value": "{AppConfig>/backgroundColor}",
+					"script": "",
+					"translation": []
+				},
+				{
+					"attribute": "styleClass",
+					"grouping": "Properties",
+					"value": "backgroundImage",
+					"script": "",
+					"translation": []
+				},
+				{
+					"attribute": "color",
+					"grouping": "Properties",
+					"value": "{AppConfig>/backgroundColorHex}",
+					"script": "",
+					"translation": []
+				}
+			],
+			"data": [
+				{
+					"fieldNo": "c3041e98-aaa6-4da7-ac70-8de2b62e5224",
+					"fieldName": "layoutContainer",
+					"fieldParent": "4590db3f-89da-4d93-cbbb-d26c6fdf94a6",
+					"fieldType": "nep.bootstrap.Container",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "f677e64a-7404-47b9-cf8f-fe5c944ef7e4",
+							"fieldName": "flexContainer",
+							"fieldParent": "c3041e98-aaa6-4da7-ac70-8de2b62e5224",
+							"fieldType": "sap.m.VBox",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "justifyContent",
+									"grouping": "Properties",
+									"value": "Center",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "height",
+									"grouping": "Properties",
+									"value": "{AppConfig>/height}",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "alignItems",
+									"grouping": "Properties",
+									"value": "Center",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "36cc8f26-7337-4f49-863d-88cf383c72ad",
+									"fieldName": "layoutImageTop",
+									"fieldParent": "f677e64a-7404-47b9-cf8f-fe5c944ef7e4",
+									"fieldType": "nep.bootstrap.Image",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "src",
+											"grouping": "Properties",
+											"value": "{AppConfig>/imageTop}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "1f3ad374-022f-4ed1-f3fa-2888e34f8f03",
+									"fieldName": "layoutTitle",
+									"fieldParent": "f677e64a-7404-47b9-cf8f-fe5c944ef7e4",
+									"fieldType": "nep.bootstrap.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "{AppConfig>/enabledTitle}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{AppConfig>/title}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "textColor",
+											"grouping": "Properties",
+											"value": "{AppConfig>/titleColor}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "textAlignment",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "fontWeight",
+											"grouping": "Properties",
+											"value": "Bolder",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Heading1",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "e3f2be45-e9ae-4217-8a9e-dc561b229561",
+									"fieldName": "layoutSubTitle",
+									"fieldParent": "f677e64a-7404-47b9-cf8f-fe5c944ef7e4",
+									"fieldType": "nep.bootstrap.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "{AppConfig>/enabledSubTitle}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{AppConfig>/subTitle}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "margin",
+											"grouping": "Properties",
+											"value": "MarginTop4",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "textColor",
+											"grouping": "Properties",
+											"value": "{AppConfig>/subTitleColor}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "textAlignment",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "fontSize",
+											"grouping": "Properties",
+											"value": "FontSize4",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Heading2",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "04946723-66e5-4504-f68a-86229bbc8b9e",
+									"fieldName": "layoutDescription",
+									"fieldParent": "f677e64a-7404-47b9-cf8f-fe5c944ef7e4",
+									"fieldType": "nep.bootstrap.Text",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "{AppConfig>/enabledDescription}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{AppConfig>/description}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "margin",
+											"grouping": "Properties",
+											"value": "MarginTop4",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "textColor",
+											"grouping": "Properties",
+											"value": "{AppConfig>/descriptionColor}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "textAlignment",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "fontSize",
+											"grouping": "Properties",
+											"value": "FontSize5",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Blockquote",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "90c09d80-e8ff-46bc-cef4-9eda3597b019",
+									"fieldName": "layoutImageBottom",
+									"fieldParent": "f677e64a-7404-47b9-cf8f-fe5c944ef7e4",
+									"fieldType": "nep.bootstrap.Image",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "src",
+											"grouping": "Properties",
+											"value": "{AppConfig>/imageBottom}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "7f0b63be-6a91-484b-cebc-9bc361773bb4",
+					"fieldName": "AppConfig",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"customComponent": false,
+					"bindingValue": "Generic Array",
+					"bindingType": "h",
+					"bindingSource": "P9",
+					"dataModel": {},
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "7570cf48-e1bc-451a-cf41-adcc35301a4b",
+					"fieldName": "AppData",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"customComponent": false,
+					"bindingValue": "Generic Array",
+					"bindingType": "h",
+					"bindingSource": "P9",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "2a8f2b72-451a-4875-81ba-32422b99ecf7",
+					"fieldName": "MetaData",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": [
+						"==OBJECT STRING==",
+						"const textColor = [{ key: \"\" }, { key: \"Black50\" }, { key: \"Body\" }, { key: \"Danger\" }, { key: \"Dark\" }, { key: \"Info\" }, { key: \"Light\" }, { key: \"Muted\" }, { key: \"Primary\" }, { key: \"Secondary\" }, { key: \"Success\" }, { key: \"Warning\" }, { key: \"White\" }, { key: \"White50\" }]\r",
+						"const backgroundColor = [{ key: \"\" }, { key: \"Body\" }, { key: \"Danger\" }, { key: \"Dark\" }, { key: \"Info\" }, { key: \"Light\" }, { key: \"Primary\" }, { key: \"Secondary\" }, { key: \"Success\" }, { key: \"Transparent\" }, { key: \"Warning\" }, { key: \"White\" }]\r",
+						"\r",
+						"const metadata = {\r",
+						"\r",
+						"    title: { type: \"Input\", label: \"Title\", default: \"Centered Hero\" },\r",
+						"    subTitle: { type: \"Input\", label: \"SubTitle\", default: \"Sub Title\" },\r",
+						"    description: { type: \"Input\", label: \"Description\", default: \"Description\" },\r",
+						"\r",
+						"    // sectionProperties: { type: 'Title', label: 'Properties' },\r",
+						"    enabledTitle: { type: \"CheckBox\", label: \"Show Title\", default: true },\r",
+						"    enabledSubTitle: { type: \"CheckBox\", label: \"Show SubTitle\", default: true },\r",
+						"    enabledDescription: { type: \"CheckBox\", label: \"Show Description\", default: true },\r",
+						"\r",
+						"    // sectionContainer: { type: 'Title', label: 'Colors' },\r",
+						"    backgroundImage: { type: \"Input\", label: \"Background Image\", default: \"\" },\r",
+						"    backgroundColor: { type: \"SingleSelect\", label: \"Background Color\", default: \"\", items: backgroundColor },\r",
+						"    backgroundColorHex: { type: \"Input\", label: \"Background Color HEX\", default: \"\" },\r",
+						"    height: { type: \"Input\", label: \"Container height\", default: \"\" },\r",
+						"\r",
+						"    imageTop: { type: \"Input\", label: \"Image Top\", default: \"\" },\r",
+						"    imageBottom: { type: \"Input\", label: \"Image Bottom\", default: \"\" },\r",
+						"\r",
+						"    titleColor: { type: \"SingleSelect\", label: \"Title Color\", default: \"\", items: textColor },\r",
+						"    subTitleColor: { type: \"SingleSelect\", label: \"SubTitle Color\", default: \"\", items: textColor },\r",
+						"    descriptionColor: { type: \"SingleSelect\", label: \"Description Color\", default: \"\", items: textColor },\r",
+						"\r",
+						"}\r",
+						"\r",
+						""
+					],
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "402e2612-1a79-4e72-eff2-9165b7192db5",
+					"fieldName": "Report",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": [
+						"==OBJECT STRING==",
+						"const report = {\r",
+						"\r",
+						"    metadata: metadata,\r",
+						"\r",
+						"    start: function () {\r",
+						"        sap.n.cmsRuntime.initApp(this);\r",
+						"    },\r",
+						"\r",
+						"    init: function (config, runtime) {\r",
+						"\r",
+						"        if (!config) config = {};\r",
+						"\r",
+						"        console.log(\"Init \", config)\r",
+						"\r",
+						"        modelAppConfig.setData(config);\r",
+						"        modelAppConfig.refresh();\r",
+						"\r",
+						"        masterContainer.onAfterRendering = function () {\r",
+						"            if (config.backgroundImage) {\r",
+						"                const elem = masterContainer.getDomRef();\r",
+						"                if (elem) elem.style.background = \"url(\" + config.backgroundImage + \")\";\r",
+						"            }\r",
+						"        };\r",
+						"\r",
+						"\r",
+						"    }\r",
+						"\r",
+						"}\r",
+						"\r",
+						"\r",
+						"if (sap.n && sap.n.cmsRuntime) {\r",
+						"    report.start();\r",
+						"} else {\r",
+						"    sap.n.Shell.attachBeforeDisplay(function (config) {\r",
+						"        report.init(config);\r",
+						"    });\r",
+						"}\r",
+						""
+					],
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "22.9.14.845",
+	"application": "cms_layout_heroes",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": true,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": [
+		"==OBJECT STRING==",
+		".backgroundImage {\r",
+		"    background-repeat: no-repeat;\r",
+		"    background-position: center;\r",
+		"    background-size: cover;\r",
+		"}"
+	],
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": true,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"apis": [],
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}

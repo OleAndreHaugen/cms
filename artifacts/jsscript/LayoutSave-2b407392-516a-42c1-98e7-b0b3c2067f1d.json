@@ -1,0 +1,35 @@
+{
+	"id": "2b407392-516a-42c1-98e7-b0b3c2067f1d",
+	"createdAt": "2022-09-13T06:37:30.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "875fb7e0-4a14-49c1-994c-5c8142c78ea2",
+			"name": "cms_layout",
+			"contextname": "cms_layout"
+		}
+	],
+	"apis": [],
+	"name": "LayoutSave",
+	"ver": "22.9.13.1932",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"try {\r",
+		"    const savedData = await entities.cms_layout.save(req.body);    \r",
+		"    result.data = { status: \"Saved\", data: savedData }\r",
+		"    complete();\r",
+		"} catch (e) {\r",
+		"    result.data = { status: \"Error\", message: e }\r",
+		"    complete();\r",
+		"}"
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "ec9a5ab2-018c-4d25-9ffe-832d7b542560",
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}

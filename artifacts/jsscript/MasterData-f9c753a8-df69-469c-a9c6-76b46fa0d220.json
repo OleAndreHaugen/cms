@@ -1,0 +1,74 @@
+{
+	"id": "f9c753a8-df69-469c-a9c6-76b46fa0d220",
+	"createdAt": "2022-09-10T06:49:44.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "ab7cc274-8b51-4fcb-8c59-2126efb029b0",
+			"name": "cms_category",
+			"contextname": "cms_category"
+		},
+		{
+			"id": "2e6a9176-0786-4089-9ec8-2b588192f36c",
+			"name": "cms_content",
+			"contextname": "cms_content"
+		},
+		{
+			"id": "a03b504e-8c88-482f-aaf7-cb04c4b9cad3",
+			"name": "cms_model",
+			"contextname": "cms_model"
+		},
+		{
+			"id": "2b48c59f-6ca9-4f9b-8e93-33d94040ca18",
+			"name": "cms_template",
+			"contextname": "cms_template"
+		},
+		{
+			"id": "2b48c59f-6ca9-4f9b-8e93-33d94040ca18",
+			"name": "cms_template",
+			"contextname": "cms_template"
+		},
+		{
+			"id": "875fb7e0-4a14-49c1-994c-5c8142c78ea2",
+			"name": "cms_layout",
+			"contextname": "cms_layout"
+		}
+	],
+	"apis": [],
+	"name": "MasterData",
+	"ver": "22.9.13.1933",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"result.data = {\r",
+		"    models: await entities.cms_model.find(),\r",
+		"    content: await entities.cms_content.find(),\r",
+		"    category: await entities.cms_category.find(),\r",
+		"    template: await entities.cms_template.find(),\r",
+		"    layout: await entities.cms_layout.find(),\r",
+		"    status: [{\r",
+		"        id: \"1\",\r",
+		"        name: \"Draft\",\r",
+		"        state: \"None\"\r",
+		"    }, {\r",
+		"        id: \"2\",\r",
+		"        name: \"Published\",\r",
+		"        state: \"Success\"\r",
+		"    }, {\r",
+		"        id: \"3\",\r",
+		"        name: \"Changed\",\r",
+		"        state: \"Warning\"\r",
+		"    }],\r",
+		"    user: req.user\r",
+		"}\r",
+		"complete();"
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "ec9a5ab2-018c-4d25-9ffe-832d7b542560",
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}

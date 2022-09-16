@@ -1,0 +1,44 @@
+{
+	"id": "a03b504e-8c88-482f-aaf7-cb04c4b9cad3",
+	"createdAt": "2022-09-04T09:44:39.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"fields": [
+		{
+			"id": "afd9bc05-0536-4743-edae-8970037a0412",
+			"fieldName": "name",
+			"fieldType": "mediumtext",
+			"description": "Name"
+		},
+		{
+			"id": "ce3be6d6-7572-4b74-fe7b-88922926e202",
+			"fieldName": "description",
+			"fieldType": "mediumtext",
+			"description": "Description",
+			"isNullable": true
+		},
+		{
+			"id": "c278f264-b1ab-4e29-9652-485dd8ef39d0",
+			"fieldName": "color",
+			"fieldType": "integer",
+			"description": "Color Scheme",
+			"isNullable": true
+		},
+		{
+			"id": "b65d913a-2d91-4cf6-d8f0-9242b3a1a236",
+			"fieldName": "fields",
+			"fieldType": "json",
+			"description": "Fields",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "cms_model",
+	"description": "CMS: Content Model",
+	"ver": "22.9.11.1038",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142",
+	"rolesRead": [],
+	"rolesWrite": []
+}

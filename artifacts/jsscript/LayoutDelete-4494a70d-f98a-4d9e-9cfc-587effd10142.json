@@ -1,0 +1,29 @@
+{
+	"id": "4494a70d-f98a-4d9e-9cfc-587effd10142",
+	"createdAt": "2022-09-13T06:37:38.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "875fb7e0-4a14-49c1-994c-5c8142c78ea2",
+			"name": "cms_layout",
+			"contextname": "cms_layout"
+		}
+	],
+	"apis": [],
+	"name": "LayoutDelete",
+	"ver": "22.9.13.1932",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"await entities.cms_layout.delete(req.query.id);\r",
+		"complete();"
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "ec9a5ab2-018c-4d25-9ffe-832d7b542560",
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}

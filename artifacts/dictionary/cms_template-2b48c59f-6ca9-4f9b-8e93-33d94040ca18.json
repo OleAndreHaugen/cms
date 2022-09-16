@@ -1,0 +1,37 @@
+{
+	"id": "2b48c59f-6ca9-4f9b-8e93-33d94040ca18",
+	"createdAt": "2022-09-13T06:52:38.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"fields": [
+		{
+			"id": "732c1cc5-b106-4591-8b1d-062f37d91e0f",
+			"fieldName": "name",
+			"fieldType": "mediumtext",
+			"description": "Name"
+		},
+		{
+			"id": "7c9905ed-f071-4f76-a9be-7551b131e014",
+			"fieldName": "description",
+			"fieldType": "text",
+			"description": "Description",
+			"isNullable": true
+		},
+		{
+			"id": "efe1fee0-e617-4a4d-f8b2-58d19e3c3846",
+			"fieldName": "application",
+			"fieldType": "mediumtext",
+			"description": "Application",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "cms_template",
+	"description": "CMS: Template",
+	"ver": "22.9.13.1049",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142",
+	"rolesRead": [],
+	"rolesWrite": []
+}

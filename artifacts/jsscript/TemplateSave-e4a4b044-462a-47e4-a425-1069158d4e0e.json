@@ -1,0 +1,35 @@
+{
+	"id": "e4a4b044-462a-47e4-a425-1069158d4e0e",
+	"createdAt": "2022-09-14T04:25:04.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "2b48c59f-6ca9-4f9b-8e93-33d94040ca18",
+			"name": "cms_template",
+			"contextname": "cms_template"
+		}
+	],
+	"apis": [],
+	"name": "TemplateSave",
+	"ver": "22.9.14.625",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"try {\r",
+		"    const savedData = await entities.cms_template.save(req.body);\r",
+		"    result.data = { status: \"Saved\", data: savedData }\r",
+		"    complete();\r",
+		"} catch (e) {\r",
+		"    result.data = { status: \"Error\", message: e }\r",
+		"    complete();\r",
+		"}"
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "ec9a5ab2-018c-4d25-9ffe-832d7b542560",
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}

@@ -1,0 +1,115 @@
+{
+	"id": "157e7167-f782-46ed-a050-5889687ad25c",
+	"createdAt": "2022-09-14T05:23:00.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "6d18b015-da13-4c1e-9de8-0395fc304082",
+			"fieldName": "panLoader",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Panel",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "styleClassPadding",
+					"grouping": "Properties",
+					"value": "sapUiNoContentPadding",
+					"script": "",
+					"translation": []
+				},
+				{
+					"attribute": "backgroundDesign",
+					"grouping": "Properties",
+					"value": "Transparent",
+					"script": "",
+					"translation": []
+				}
+			],
+			"data": []
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "979e8c5d-d618-489a-e643-980fa6f92410",
+					"fieldName": "oJavascript",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": [
+						"==OBJECT STRING==",
+						"sap.ui.getCore().attachInit(function (startParams) {\r",
+						"\r",
+						"    console.log(\"from controller \", startParams)\r",
+						"\r",
+						"    var app = \"cms_layout_heroes\";\r",
+						"\r",
+						"\r",
+						"    // Hente page ID\r",
+						"    // Merge content til Metadata ? mappe feltene ? \r",
+						"\r",
+						"    // Loade med merget startParams\r",
+						"\r",
+						"    AppCache.Load(app, {\r",
+						"        // appGUID: ModelData.genID(),\r",
+						"        parentObject: panLoader,\r",
+						"        startParams: { title: \"From loading\", subTitle: \"Working\" }\r",
+						"    });\r",
+						"\r",
+						"});\r",
+						"\r",
+						""
+					],
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "22.9.14.847",
+	"application": "cms_controller",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"apis": [],
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}

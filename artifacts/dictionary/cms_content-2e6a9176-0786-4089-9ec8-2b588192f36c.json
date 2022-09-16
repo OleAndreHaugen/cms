@@ -1,0 +1,58 @@
+{
+	"id": "2e6a9176-0786-4089-9ec8-2b588192f36c",
+	"createdAt": "2022-09-04T09:47:14.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"fields": [
+		{
+			"id": "f434cf29-b86c-4b85-a7c0-93c6bac9aa3c",
+			"fieldName": "name",
+			"fieldType": "mediumtext",
+			"description": "Name"
+		},
+		{
+			"id": "4481aa5e-858c-42e4-98e7-34ddd0e06b3b",
+			"fieldName": "description",
+			"fieldType": "mediumtext",
+			"description": "Description",
+			"isNullable": true
+		},
+		{
+			"id": "56fc9c66-4ad4-488e-c5ee-45ecad04bd97",
+			"fieldName": "category",
+			"fieldType": "smalltext",
+			"description": "Category",
+			"isNullable": true
+		},
+		{
+			"id": "030430fb-bd2a-4b11-97cc-e14dae77c60a",
+			"fieldName": "modelid",
+			"fieldType": "mediumtext",
+			"description": "Content Model ID",
+			"isNullable": true
+		},
+		{
+			"id": "fe3e837b-aa6a-4764-e833-682b58581158",
+			"fieldName": "status",
+			"fieldType": "smalltext",
+			"description": "Status",
+			"isNullable": true
+		},
+		{
+			"id": "5fa08887-c19c-495a-83cd-3e966a0932d2",
+			"fieldName": "content",
+			"fieldType": "json",
+			"description": "Content",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "cms_content",
+	"description": "CMS: Content",
+	"ver": "22.9.10.945",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142",
+	"rolesRead": [],
+	"rolesWrite": []
+}
