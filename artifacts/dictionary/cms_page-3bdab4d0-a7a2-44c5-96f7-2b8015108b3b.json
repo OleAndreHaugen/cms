@@ -28,7 +28,7 @@
 	"foreignKeys": [],
 	"name": "cms_page",
 	"description": "CMS: Page",
-	"ver": "22.9.14.627",
+	"ver": "22.9.18.1322",
 	"enableAudit": false,
 	"includeDataInPackage": false,
 	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142",

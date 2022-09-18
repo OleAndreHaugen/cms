@@ -1,0 +1,44 @@
+{
+	"id": "44744e5d-64a9-4ac8-8219-127a7cecfc5f",
+	"createdAt": "2022-09-18T11:22:07.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"fields": [
+		{
+			"id": "915c93d4-f409-49f6-d53f-0f934afaa938",
+			"fieldName": "name",
+			"fieldType": "text",
+			"description": "Name"
+		},
+		{
+			"id": "c5448e34-219c-4592-e0fa-255d233a0951",
+			"fieldName": "type",
+			"fieldType": "mediumtext",
+			"description": "Type",
+			"isNullable": true
+		},
+		{
+			"id": "fdbf4505-c3e3-49ba-b21b-312770835836",
+			"fieldName": "size",
+			"fieldType": "integer",
+			"description": "Size",
+			"isNullable": true
+		},
+		{
+			"id": "641172c2-e43a-4063-f8ac-e62ca2aa312b",
+			"fieldName": "content",
+			"fieldType": "text",
+			"description": "Content",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "cms_media",
+	"description": "CMS: Media Files",
+	"ver": "22.9.18.1324",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142",
+	"rolesRead": [],
+	"rolesWrite": []
+}

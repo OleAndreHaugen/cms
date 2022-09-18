@@ -70,6 +70,12 @@
 			"name": "CMS Client",
 			"description": "CMS Client API ",
 			"apiGroup": "c83268e4-6bc9-4fc6-92f7-668404af654a"
+		},
+		{
+			"id": "f713c7de-6eac-45f3-b91b-760c73e360bd",
+			"name": "CMS Runtime",
+			"description": "CMS Headless API",
+			"apiGroup": "c83268e4-6bc9-4fc6-92f7-668404af654a"
 		}
 	],
 	"odataSource": [],
@@ -104,6 +110,11 @@
 			"id": "3bdab4d0-a7a2-44c5-96f7-2b8015108b3b",
 			"name": "cms_page",
 			"description": "CMS: Page"
+		},
+		{
+			"id": "44744e5d-64a9-4ac8-8219-127a7cecfc5f",
+			"name": "cms_media",
+			"description": "CMS: Media Files"
 		}
 	],
 	"jsclass": [
@@ -160,6 +171,31 @@
 		{
 			"id": "8e6f4db2-c202-4e91-b0c7-7a736c734aba",
 			"name": "PageSave",
+			"description": null
+		},
+		{
+			"id": "1a222d60-1186-4573-8c4a-8e67d104e66c",
+			"name": "headlessGetModels",
+			"description": null
+		},
+		{
+			"id": "752b3bd5-34e1-4863-b3ba-fee9296aeb3f",
+			"name": "headlessGetModelContent",
+			"description": null
+		},
+		{
+			"id": "d0570775-5547-4568-8a22-e1e8429ab943",
+			"name": "MediaSave",
+			"description": null
+		},
+		{
+			"id": "725b0bc7-4006-48b1-a6a1-ddb947666830",
+			"name": "MediaDelete",
+			"description": null
+		},
+		{
+			"id": "0ac8766f-d311-4ffc-adce-daa25b14f0c3",
+			"name": "MediaGet",
 			"description": null
 		}
 	],

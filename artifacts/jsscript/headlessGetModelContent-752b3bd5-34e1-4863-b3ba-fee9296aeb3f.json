@@ -1,0 +1,39 @@
+{
+	"id": "752b3bd5-34e1-4863-b3ba-fee9296aeb3f",
+	"createdAt": "2022-09-18T09:19:21.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "2e6a9176-0786-4089-9ec8-2b588192f36c",
+			"name": "cms_content",
+			"contextname": "cms_content"
+		}
+	],
+	"apis": [],
+	"name": "headlessGetModelContent",
+	"ver": "22.9.18.1120",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"try {\r",
+		"\r",
+		"    if (!req.query || !req.query.id) {\r",
+		"\r",
+		"        return complete();\r",
+		"    }\r",
+		"    result.data = await entities.cms_content.find({ modelid: req.query.id });\r",
+		"    complete();\r",
+		"} catch (e) {\r",
+		"    result.data = { status: \"Error\", message: e }\r",
+		"    complete();\r",
+		"}"
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "ec9a5ab2-018c-4d25-9ffe-832d7b542560",
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}

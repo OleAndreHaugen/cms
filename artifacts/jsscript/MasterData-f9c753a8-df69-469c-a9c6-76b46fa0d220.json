@@ -16,6 +16,11 @@
 			"contextname": "cms_content"
 		},
 		{
+			"id": "875fb7e0-4a14-49c1-994c-5c8142c78ea2",
+			"name": "cms_layout",
+			"contextname": "cms_layout"
+		},
+		{
 			"id": "a03b504e-8c88-482f-aaf7-cb04c4b9cad3",
 			"name": "cms_model",
 			"contextname": "cms_model"
@@ -31,14 +36,14 @@
 			"contextname": "cms_template"
 		},
 		{
-			"id": "875fb7e0-4a14-49c1-994c-5c8142c78ea2",
-			"name": "cms_layout",
-			"contextname": "cms_layout"
+			"id": "44744e5d-64a9-4ac8-8219-127a7cecfc5f",
+			"name": "cms_media",
+			"contextname": "cms_media"
 		}
 	],
 	"apis": [],
 	"name": "MasterData",
-	"ver": "22.9.13.1933",
+	"ver": "22.9.18.1353",
 	"description": null,
 	"content": [
 		"==OBJECT STRING==",
@@ -48,6 +53,7 @@
 		"    category: await entities.cms_category.find(),\r",
 		"    template: await entities.cms_template.find(),\r",
 		"    layout: await entities.cms_layout.find(),\r",
+		"    media: await entities.cms_media.find({ select: [\"id\", \"name\", \"type\", \"size\", \"updatedAt\", \"updatedBy\"] }),\r",
 		"    status: [{\r",
 		"        id: \"1\",\r",
 		"        name: \"Draft\",\r",

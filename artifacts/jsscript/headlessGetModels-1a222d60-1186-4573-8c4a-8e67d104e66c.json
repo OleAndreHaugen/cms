@@ -1,0 +1,34 @@
+{
+	"id": "1a222d60-1186-4573-8c4a-8e67d104e66c",
+	"createdAt": "2022-09-18T09:16:51.000Z",
+	"createdBy": "ole-andre.haugen@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "a03b504e-8c88-482f-aaf7-cb04c4b9cad3",
+			"name": "cms_model",
+			"contextname": "cms_model"
+		}
+	],
+	"apis": [],
+	"name": "headlessGetModels",
+	"ver": "22.9.18.1119",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"try {\r",
+		"    result.data = await entities.cms_model.find();\r",
+		"    complete();\r",
+		"} catch (e) {\r",
+		"    result.data = { status: \"Error\", message: e }\r",
+		"    complete();\r",
+		"}"
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "ec9a5ab2-018c-4d25-9ffe-832d7b542560",
+	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
+}
