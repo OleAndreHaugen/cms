@@ -4870,7 +4870,6 @@
 																					"grouping": "Events",
 																					"value": "pageContentListSearch.fireLiveChange();",
 																					"script": "pageContentListSearch.fireLiveChange();",
-																					"language": "javascript",
 																					"translation": []
 																				}
 																			],
@@ -5058,7 +5057,6 @@
 																					"grouping": "Events",
 																					"value": "pageContentListSearch.fireLiveChange();",
 																					"script": "pageContentListSearch.fireLiveChange();",
-																					"language": "javascript",
 																					"translation": []
 																				}
 																			],
@@ -7319,6 +7317,13 @@
 																					"response": [],
 																					"attributes": [
 																						{
+																							"attribute": "styleClass",
+																							"grouping": "Properties",
+																							"value": "nepFormInput",
+																							"script": "",
+																							"translation": []
+																						},
+																						{
 																							"attribute": "maxContainerCols",
 																							"grouping": "Properties",
 																							"value": "3",
@@ -7328,7 +7333,7 @@
 																						{
 																							"attribute": "layout",
 																							"grouping": "Properties",
-																							"value": "ColumnLayout",
+																							"value": "ResponsiveGridLayout",
 																							"script": "",
 																							"translation": []
 																						},
@@ -15825,7 +15830,7 @@
 			"data": []
 		}
 	],
-	"ver": "22.9.18.2023",
+	"ver": "22.9.18.2027",
 	"application": "cmsdesigner",
 	"title": "CMS",
 	"description": "CMS",
