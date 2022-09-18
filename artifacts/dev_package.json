@@ -192,11 +192,6 @@
 			"id": "725b0bc7-4006-48b1-a6a1-ddb947666830",
 			"name": "MediaDelete",
 			"description": null
-		},
-		{
-			"id": "0ac8766f-d311-4ffc-adce-daa25b14f0c3",
-			"name": "MediaGet",
-			"description": null
 		}
 	],
 	"jsscript_group": [

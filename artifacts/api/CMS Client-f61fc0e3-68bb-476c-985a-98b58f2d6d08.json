@@ -202,20 +202,6 @@
 			"endpoints": [],
 			"tags": "Media",
 			"serverScript": "725b0bc7-4006-48b1-a6a1-ddb947666830"
-		},
-		{
-			"id": "c33ff450-2d87-4849-f8f9-28090bb5c89a",
-			"method": "GET",
-			"path": "/media",
-			"description": "Get image content",
-			"parameters": [],
-			"headers": [],
-			"responses": [],
-			"content": [],
-			"auth": [],
-			"endpoints": [],
-			"tags": "Media",
-			"serverScript": "0ac8766f-d311-4ffc-adce-daa25b14f0c3"
 		}
 	],
 	"definitions": [
@@ -1611,8 +1597,8 @@
 	"documentation": [],
 	"name": "CMS Client",
 	"endpoint": "/api/serverscript/cmsclient",
-	"ver": "22.9.18.1442",
-	"version": "v1.0",
+	"ver": "22.9.18.1545",
+	"version": "1.0",
 	"description": "CMS Client API ",
 	"mediaType": null,
 	"securitySchemes": null,

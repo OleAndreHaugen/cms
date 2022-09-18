@@ -360,6 +360,47 @@
 											"data": []
 										},
 										{
+											"fieldNo": "8fc4b448-8ce8-48b8-9170-de70fe95749c",
+											"fieldName": "oNavMainSwagger",
+											"fieldParent": "ab2bc268-be8e-4a29-fd84-8585f9764c9d",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "API Headless",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://tnt/api",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "hasExpander",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "oApp.to(pageSwagger);",
+													"script": "oApp.to(pageSwagger);",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
 											"fieldNo": "679bdbca-fa58-42c1-bfea-5ede45bd2929",
 											"fieldName": "oNavMainTemplate",
 											"fieldParent": "ab2bc268-be8e-4a29-fd84-8585f9764c9d",
@@ -5162,6 +5203,162 @@
 																}
 															],
 															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "fd3515e7-f5b9-41d7-e43b-7b0a24e194b3",
+									"fieldName": "pageSwagger",
+									"fieldParent": "44a914c4-9c95-4e23-e726-c44d7841dbec",
+									"fieldType": "sap.m.Page",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "showHeader",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "backgroundDesign",
+											"grouping": "Properties",
+											"value": "Transparent",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "afbbccc2-9a9a-4a5b-9e7f-2f7ca5bc0cb9",
+											"fieldName": "containerSwagger",
+											"fieldParent": "fd3515e7-f5b9-41d7-e43b-7b0a24e194b3",
+											"fieldType": "sap.m.VBox",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "styleClass",
+													"grouping": "Properties",
+													"value": "nepPageLeft nepPageRight",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "renderType",
+													"grouping": "Properties",
+													"value": "Bare",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "height",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "c7861ed3-04f1-4c6f-d93b-6bc942c8ef66",
+													"fieldName": "panUI",
+													"fieldParent": "afbbccc2-9a9a-4a5b-9e7f-2f7ca5bc0cb9",
+													"fieldType": "sap.m.Panel",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "styleClassPadding",
+															"grouping": "Properties",
+															"value": "sapUiNoContentPadding",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "styleClass",
+															"grouping": "Properties",
+															"value": "nepContentPanel nepContentPanelFull",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "height",
+															"grouping": "Properties",
+															"value": "100%",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "backgroundDesign",
+															"grouping": "Properties",
+															"value": "Solid",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "fcdf4ae8-0c63-447d-85a0-2837525ecea5",
+															"fieldName": "htmlUI",
+															"fieldParent": "c7861ed3-04f1-4c6f-d93b-6bc942c8ef66",
+															"fieldType": "sap.ui.core.HTML",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "afterRendering",
+																	"grouping": "Events",
+																	"value": "Anonymous Function",
+																	"script": [
+																		"==OBJECT STRING==",
+																		"let id = \"f713c7de-6eac-45f3-b91b-760c73e360bd\";\r",
+																		"document.getElementById('swaggerFrame').setAttribute('src', '/public/swaggerui/index.html?swagger=' + location.origin + '/api/swagger/' + id);"
+																	],
+																	"language": "javascript",
+																	"translation": []
+																}
+															],
+															"data": [
+																{
+																	"fieldNo": "4f8dfeec-3e94-42c1-8ef8-6b9de56a8d24",
+																	"fieldName": "htmlCodeUI",
+																	"fieldParent": "fcdf4ae8-0c63-447d-85a0-2837525ecea5",
+																	"fieldType": "neptune.Html",
+																	"script": [
+																		"==OBJECT STRING==",
+																		"<iframe id=\"swaggerFrame\" src=\"/public/swaggerui/index.html\"></iframe>",
+																		"",
+																		"<style>",
+																		"    #swaggerFrame {",
+																		"        height: calc(100% - 10px);",
+																		"        border: none;",
+																		"        width: 100%;",
+																		"        overflow:hidden;",
+																		"        ",
+																		"    }",
+																		"</style>"
+																	],
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [],
+																	"data": []
+																}
+															]
 														}
 													]
 												}
@@ -11769,20 +11966,6 @@
 							"data": []
 						},
 						{
-							"fieldNo": "494ce636-7e13-4983-e950-7c98e7a2fecf",
-							"fieldName": "MediaGet",
-							"fieldParent": "f272d7a4-6671-4a68-c1cc-b3feda5d56ab",
-							"fieldType": "neptune.restapi",
-							"script": "",
-							"customComponent": false,
-							"restSource": "f61fc0e3-68bb-476c-985a-98b58f2d6d08",
-							"restOperation": "c33ff450-2d87-4849-f8f9-28090bb5c89a",
-							"request": [],
-							"response": [],
-							"attributes": [],
-							"data": []
-						},
-						{
 							"fieldNo": "974b65a5-bb62-4962-90ca-3cc8e91a951e",
 							"fieldName": "MediaSave",
 							"fieldParent": "f272d7a4-6671-4a68-c1cc-b3feda5d56ab",
@@ -14924,7 +15107,7 @@
 			"data": []
 		}
 	],
-	"ver": "22.9.18.1539",
+	"ver": "22.9.18.1551",
 	"application": "cmsdesigner",
 	"title": "CMS",
 	"description": "CMS",
@@ -15034,7 +15217,7 @@
 		{
 			"id": "f61fc0e3-68bb-476c-985a-98b58f2d6d08",
 			"name": "CMS Client",
-			"ver": "22.9.18.1442"
+			"ver": "22.9.18.1545"
 		}
 	],
 	"package": "29d3acfc-d8ff-48e1-83af-7a6cc1a52142"
