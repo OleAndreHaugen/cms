@@ -110,11 +110,6 @@
 			"id": "3bdab4d0-a7a2-44c5-96f7-2b8015108b3b",
 			"name": "cms_page",
 			"description": "CMS: Page"
-		},
-		{
-			"id": "44744e5d-64a9-4ac8-8219-127a7cecfc5f",
-			"name": "cms_media",
-			"description": "CMS: Media Files"
 		}
 	],
 	"jsclass": [
@@ -181,16 +176,6 @@
 		{
 			"id": "752b3bd5-34e1-4863-b3ba-fee9296aeb3f",
 			"name": "headlessGetModelContent",
-			"description": null
-		},
-		{
-			"id": "d0570775-5547-4568-8a22-e1e8429ab943",
-			"name": "MediaSave",
-			"description": null
-		},
-		{
-			"id": "725b0bc7-4006-48b1-a6a1-ddb947666830",
-			"name": "MediaDelete",
 			"description": null
 		}
 	],
