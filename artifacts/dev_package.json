@@ -42,7 +42,7 @@
 	},
 	"name": "com.neptune.cms",
 	"description": "Content Management Solution",
-	"ver": "22.9.16.812",
+	"ver": "22.10.11.1927",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -209,5 +209,6 @@
 	"department": [],
 	"script_scheduler": [],
 	"wf_definition": [],
-	"connector": []
+	"connector": [],
+	"events": []
 }

@@ -10888,6 +10888,25 @@
 																							"value": "{MasterData>templateid}",
 																							"script": "",
 																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Formatter",
+																							"value": "Anonymous Function",
+																							"script": [
+																								"==OBJECT STRING==",
+																								"if (typeof templateid === \"undefined\" || templateid === null || templateid === \"\") { return; }\r",
+																								"\r",
+																								"var rec = ModelData.FindFirst(modelMasterData.oData.template, \"id\", templateid);\r",
+																								"\r",
+																								"if (rec) {\r",
+																								"    return rec.name;\r",
+																								"} else {\r",
+																								"    return templateid;\r",
+																								"}\r",
+																								""
+																							],
+																							"translation": []
 																						}
 																					],
 																					"data": []
@@ -12562,6 +12581,34 @@
 													]
 												}
 											]
+										},
+										{
+											"fieldNo": "938b433f-93d1-4af8-81f9-0663a01b4569",
+											"fieldName": "layoutLeftSide",
+											"fieldParent": "ff08ebae-88eb-4b8f-fbc3-1ea607d75f77",
+											"fieldType": "sap.ui.layout.SplitterLayoutData",
+											"script": "",
+											"customComponent": false,
+											"refObject": "containerLeftSideLayoutDetail",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "size",
+													"grouping": "Properties",
+													"value": "30%",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "minSize",
+													"grouping": "Properties",
+													"value": "400",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
 										}
 									]
 								}
@@ -15830,7 +15877,7 @@
 			"data": []
 		}
 	],
-	"ver": "22.9.18.2027",
+	"ver": "22.10.11.1920",
 	"application": "cmsdesigner",
 	"title": "CMS",
 	"description": "CMS",
@@ -15852,6 +15899,7 @@
 	"ui5_theme": "sap_horizon_dark",
 	"ui5_version": "1.102",
 	"ui5_language": null,
+	"ui5_url": "",
 	"cus_theme": "",
 	"css": [
 		"==OBJECT STRING==",
